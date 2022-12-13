@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="horas.css">
+    <title>Tiempo de trabajo</title>
+</head>
+<body>
+    <h1>Calendar</h1>
+    <table>
+        <thead>
+          <tr>
+            <td> <label for="Monday"> Monday:</label></td>
+            <td> <input type="number" id="Monday"></td>
+          </tr>
+          <tr>
+            <td> <label for="Tuesday"> Tuesday:</label></td>
+            <td> <input type="number" id="Tuesday"></td>
+          </tr>
+          <tr>
+            <td> <label for="wednesday"> Wednesday:</label></td>
+            <td> <input type="number" id="wednesday"></td>
+          </tr>
+          <tr>
+            <td> <label for="hursday"> Thursday:</label></td>
+            <td> <input type="number" id="thursday"></td>
+          </tr>
+          <tr>
+            <td> <label for="Friday"> Friday:</label></td>
+            <td> <input type="number" id="Friday"></td>
+          </tr>
+          <tr>
+            <td> <label for="Saturday"> Saturday:</label></td>
+            <td> <input type="number" id="Saturday"></td>
+          </tr>
+          <tr>
+            <td> <label for="Sunday"> Sunday:</label></td>
+            <td> <input type="number" id="Sunday"></td>
+          </tr>
+        </thead>
+        </table>
+        <br><button type="submit" value="submit" onclick="save()">SUBMIT</button>
+        <script>
+            function save(){
+                var hora_Monday = document.getElementById("Monday");
+                localStorage.setItem("Monday",hora_Monday);
+
+                var hora_Tuesday = document.getElementById("Tuesday");
+                localStorage.setItem("Tuesday",hora_Tuesday);
+
+                var hora_wednesday = document.getElementById("wednesday");
+                localStorage.setItem("wednesday",hora_wednesday);
+
+                var hora_thursday = document.getElementById("thursday");
+                localStorage.setItem("thursday",hora_thursday);
+
+                var hora_Friday = document.getElementById("Friday");
+                localStorage.setItem("Friday",hora_Friday);
+
+                var hora_Saturday = document.getElementById("Saturday");
+                localStorage.setItem("Saturday",hora_Saturday);
+
+                var hora_Sunday = document.getElementById("Sunday");
+                localStorage.setItem("Sunday",hora_Sunday);
+            }
+
+        </script>
+
+        
+</body>
+</html>
